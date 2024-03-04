@@ -1,4 +1,4 @@
-const baseUrl = "https://todoo.5xcamp.us";
+const baseUrl = 'https://todoo.5xcamp.us';
 
 const apiNext = {
   signin: `${baseUrl}/users/sign_in`,
@@ -6,7 +6,7 @@ const apiNext = {
   signout: `${baseUrl}/users/sign_out`,
   check: `${baseUrl}/check`,
   todos: `${baseUrl}/todos`,
-  toggle: function (id) {
+  toggle(id) {
     return `${this.todos}/${id}/toggle`;
   },
 };
