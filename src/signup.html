@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <section class="bg-main-500 font-NotoSansTC">
+      <div
+        class="container h-screen mr-auto ml-auto flex justify-center lg:items-center gap-[106px] pt-4"
+      >
+        <div class="hidden lg:block">
+          <img src="../public/logo_lg.png" alt="" class="mr-auto ml-auto" />
+          <img src="../public/img.png" alt="" class="mt-4" />
+        </div>
+        <div class="">
+          <img
+            src="../public/logo_lg.png"
+            alt="Logo_lg"
+            class="mr-auto ml-auto lg:hidden"
+          />
+          <h1 class="font-bold text-[1.5rem] text-center mt-4">註冊帳號</h1>
+          <form
+            action="submit"
+            class="flex flex-col justify-center items-center"
+          >
+            <label
+              ><p class="text-sm font-bold mt-7">Email</p>
+              <input
+                type="text"
+                placeholder="請輸入Email"
+                class="pt-3 pb-3 pr-4 pl-4 rounded-lg w-80"
+              />
+              <p class="invisible mt-1 text-sm text-red-500 font-bold">
+                此欄位不可為空
+              </p>
+            </label>
+            <label
+              ><p class="text-sm font-bold mt-4">您的暱稱</p>
+              <input
+                type="text"
+                placeholder="請輸入您的暱稱"
+                class="pt-3 pb-3 pr-4 pl-4 rounded-lg w-80"
+              />
+              <p class="invisible mt-1 text-sm text-red-500 font-bold">
+                請輸入暱稱
+              </p>
+            </label>
+            <label
+              ><p class="text-sm font-bold mt-4">密碼</p>
+              <input
+                type="text"
+                placeholder="請輸入密碼"
+                class="pt-3 pb-3 pr-4 pl-4 rounded-lg w-80"
+              />
+              <p class="invisible mt-1 text-sm text-red-500 font-bold">
+                請輸入密碼
+              </p>
+            </label>
+            <label>
+              <p class="text-sm font-bold mt-4">請再次輸入密碼</p>
+              <input
+                type="password"
+                placeholder="請再次輸入密碼"
+                class="pt-3 pb-3 pr-4 pl-4 rounded-lg w-80"
+              />
+              <p class="invisible text-sm font-bold">請輸入密碼</p>
+            </label>
+            <button
+              type="button"
+              class="w-40 h-12 bg-black text-white p-3 pr-12 pl-12 rounded-lg mt-3"
+            >
+              註冊帳號
+            </button>
+          </form>
+          <a href="./login.html"
+            ><p class="text-lg font-bold mt-6 text-center">登入</p></a
+          >
+        </div>
+      </div>
+    </section>
+    <script src="./api/signup.js" type="module"></script>
+  </body>
+</html>

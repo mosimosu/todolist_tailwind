@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Todo List</title>
+  </head>
+  <body>
+    <section class="bg-main-500 font-NotoSansTC">
+      <div
+        class="container h-screen mr-auto ml-auto flex justify-center lg:items-center gap-[106px] pt-4"
+      >
+        <div class="hidden lg:block">
+          <img src="../public/logo_lg.png" alt="" class="mr-auto ml-auto" />
+          <img src="../public/img.png" alt="" class="mt-4" />
+        </div>
+        <div class="">
+          <img
+            src="../public/logo_lg.png"
+            alt="Logo_lg"
+            class="mr-auto ml-auto lg:hidden"
+          />
+          <h1 class="font-bold text-xl text-center mt-4">
+            最實用的線上代辦事項服務
+          </h1>
+          <form
+            action="submit"
+            class="flex flex-col justify-center items-center"
+          >
+            <label
+              ><p class="text-sm font-bold mt-8">Email</p>
+              <input
+                type="text"
+                placeholder="請輸入Email"
+                class="pt-3 pb-3 pr-4 pl-4 rounded-lg w-80"
+                name="email"
+                required
+              />
+              <p class="invisible mt-1 text-sm text-red-500 font-bold">
+                此欄位不可為空
+              </p>
+            </label>
+            <label>
+              <p class="text-sm font-bold mt-10">Password</p>
+              <input
+                type="password"
+                placeholder="請輸入密碼"
+                class="pt-3 pb-3 pr-4 pl-4 rounded-lg w-80"
+                name="password"
+                required
+              />
+              <p class="invisible mt-1 text-sm text-red-500 font-bold">
+                此欄位不可為空
+              </p>
+            </label>
+            <button
+              type="button"
+              class="w-32 h-12 bg-black text-white p-3 pr-12 pl-12 rounded-lg mt-7"
+            >
+              登入
+            </button>
+          </form>
+          <a href="./signup.html"
+            ><p class="text-lg font-bold mt-6 text-center">註冊帳號</p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+    <script src="./api/login.js" type="module"></script>
+  </body>
+</html>
